@@ -71,7 +71,7 @@ String.format("%s 0x%s", java.util.Arrays.stream(jdk.internal.org.objectweb.asm.
 ### Render
 
 ```java
-String.format("JUMP LABEL %s", label.toString())
+String.format("LABEL %s", label == null ? "" : label.toString())
 ```
 
 
